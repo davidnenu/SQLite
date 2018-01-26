@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.dm2.sqlite.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISBN" />
+
+            <EditText
+                android:id="@+id/isbn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:tooltipText="ISBN" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITULO" />
+
+            <EditText
+                android:id="@+id/titulo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:tooltipText="Título" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUTOR" />
+
+            <EditText
+                android:id="@+id/autor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:tooltipText="Autor" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonAniadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:onClick="aniadir"/>
+        <Button
+            android:id="@+id/botonBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:onClick="borrar"/>
+        <Button
+            android:id="@+id/botonModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificar"
+            android:onClick="modificar"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+        <Button
+            android:id="@+id/botonListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar"
+            android:onClick="listar"/>
+
+        <Button
+            android:id="@+id/botonSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:onClick="salir"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
